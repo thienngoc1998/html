@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Thao tác jquery trên cây dom</h1>
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="">ada</a></li>
+            <li><a href="">àdqdwqeqw</a></li>
+            <li><a href="">qeqeqeqeq</a></li>
+            <li><a href="">eqqeqqeqeq</a></li>
+            <li><a href="">qeqeqedqss</a></li>
+        </ul>
+    </nav>
+</div>
+  <div>
+      <button id="control">Tìm cha trực tiếp</button>
+  </div>
+
+  <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $("#control").on("click", function () {
+              $("ul").parent().css("border", "2px solid red").css("padding","20px");
+          });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .clearfix{
+            overflow: auto;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        #parent1,#parent2,#parent3{
+            background: green;
+            width: 800px;
+             margin: 30px;
+            font-size: 30px;
+            color: white;
+            position: relative;
+            height:  400px;
+        }
+        #child1,#child2,#child3{
+            background: orangered;
+            width:  50%;
+        }
+        #child1{
+          float: left;
+        }
+        #child2{
+        margin: 0 auto;
+        }
+        #child3{
+           float: right;
+        }
+    </style>
+</head>
+<body>
+<h1>Căn trái , phải , giữa khi 1 thẻ block nằm trong 1 thẻ block khác</h1>
+<p>Và mình sẽ căn trái , phải , giữa theo thẻ mẹ</p>
+
+<p>Khi căn vị trí theo thẻ mẹ sử dụng kỹ thuật position</p>
+<p>1 - cần đặt position cho thẻ mẹ là relative</p>
+<p>2 - cần đặt position cho thẻ con là absolute và đặt các thuộc tính css vị trí như top,
+    left, right , bottom theo nhu cầu thực tế</p>
+
+<div id="parent1" class="clearfix">
+    <div id="child1">
+        Căn trái
+        <img src="dog.jpg">
+    </div>
+</div>
+
+<div id="parent2" class="clearfix">
+    <div id="child2">
+        Căn giữa
+        <img src="dog.jpg">
+    </div>
+</div>
+
+<div id="parent3" class="clearfix">
+    <div id="child3">
+        Căn phải
+        <img src="dog.jpg">
+    </div>
+</div>
+</body>
+</html>

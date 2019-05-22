@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+      <input type="text" id="txt">
+       <span   style="color: red;display: none;">Không được để trống</span>
+        <br>
+      <input type="submit" id="gui" value="gửi">
+</form>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script>
+
+    $(document).ready(function () {
+        $('#gui').submit(function () {
+            var t= $("#txt").val();
+
+             if (t =='')
+             {
+
+                 $('span').css("display","block");
+                 return false;
+             }
+        })
+        })
+    </script>
+</body>
+</html>

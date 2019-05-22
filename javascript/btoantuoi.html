@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <p id="tuyen"></p>
+   <script>
+       var x=prompt("Bạn hãy nhập tuổi của mình :","");
+       var chuyendoi=parseInt(x);
+       if (isNaN(chuyendoi))
+       {
+         document.getElementById('tuyen').innerHTML="Nhập sai";
+       }
+       else
+       {
+           if (chuyendoi>=18)
+           {
+               document.getElementById('tuyen').innerHTML="hey you";
+           }
+           else
+           {
+               document.getElementById('tuyen').innerHTML="cc";
+           }
+       }
+   </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .dropdown {
+            width: 600px;
+            margin: auto;
+
+        }
+
+        .dropdown ul {
+            /* display: inline-flex; */
+            background: greenyellow;
+            list-style: none;
+        }
+
+        .dropdown li {
+            height: 30px;
+            width: 120px;
+            /* text-decoration: none; */
+            display: inline-block;
+            line-height: 30px;
+            margin-left: -5px;
+
+        }
+
+        .dropdown ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown ul li a:hover {
+            color: red;
+            background: yellow;
+        }
+
+        .dropdown li {
+            position: relative;
+        }
+
+        ul.menu2 {
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown li:hover .menu2 {
+            display: block;
+        }
+
+        li.menu2 {
+            display: none;
+        }
+
+        .menu2 li {
+            margin-left: -32px;
+
+        }
+
+        .menu2 li {
+            position: relative;
+        }
+
+        ul.menu3 {
+            display: none;
+            position: absolute;
+            top: 12px;
+            left: 120px;
+        }
+
+        .menu2 li:hover .menu3 {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div class="dropdown">
+    <ul>
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Bài viết</a>
+            <ul class="menu2">
+                <li><a href="">Bài viết mới nhất</a>
+                </li>
+                <li><a href="">Bài viết trong ngày</a>
+                    <ul class="menu3">
+                        <li><a href="">Theo chủ đề</a></li>
+                        <li><a href="">Theo chủ đề</a></li>
+                        <li><a href="">Theo chủ đề</a></li>
+                        <li><a href="">Theo chủ đề</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Bài viết đặc sắc</a>
+                    <ul class="menu3">
+                        <li><a href="">Theo chủ đề</a></li>
+                        <li><a href="">Theo chủ đề</a></li>
+                        <li><a href="">Theo chủ đề</a></li>
+                        <li><a href="">Theo chủ đề</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="">Tin tức</a></li>
+        <li><a href="">Giới thiệu</a></li>
+
+    </ul>
+</div>
+</body>
+</html>
